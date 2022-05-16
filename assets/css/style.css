@@ -1813,13 +1813,14 @@ header.style4 nav > ul li > a:after {background-color: #fff;}
 
 /*=== Sticky Header ===*/
 .sticky-header {
+  top: 0px;
   background-color: #fff;
   z-index: 9999;
   -webkit-box-shadow: 0 0 1.25rem rgba(0,0,0,.15);
   box-shadow: 0 0 1.25rem rgba(0,0,0,.15);
-  opacity: 0;
-  position: absolute;
-  visibility: hidden;
+  opacity: 1;
+  position: fixed;
+  transition: 1s;
 }
 .sticky-header.sticky {
   opacity: 1;
